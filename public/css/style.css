@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main > *{
+    margin-bottom: 1rem;
+}
+
+#title{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.repolink p{
+    font-size: 1.1rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badges a{
+    margin-right: 1rem;
+}
+
+#base-url{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.code{
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+}
+
+main{
+    font-size: 1rem;
+}
+
+.container{
+    margin: 0 14rem;
+}
+
+footer{
+    font-size: 1rem;
+}
+
+.contributing ul{
+    margin: 1rem 0 1rem 3rem;
+}
+
+.author ul{
+    margin: 0.5rem 0 3rem 3rem;
+}
