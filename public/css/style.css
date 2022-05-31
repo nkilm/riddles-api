@@ -1,73 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-size: 62.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main > *{
+main>* {
     margin-bottom: 1rem;
 }
 
-#title{
+#title {
     font-size: 2.5rem;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
-.repolink p{
+.repolink p {
     font-size: 1.1rem;
     display: block;
     text-align: center;
     margin-bottom: 0.8rem;
 }
 
-.badges{
+.badges {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.badges a{
+.badges a {
     margin-right: 1rem;
 }
 
-#base-url{
+#api 
+{
+    padding-left: 20px;
+}
+#base-url {
     font-family: 'Roboto Mono', monospace;
 }
 
-.code{
+.code {
     background-color: #f5f5f5;
     border-radius: 1rem;
 }
 
-main{
+main {
     font-size: 1rem;
 }
 
-.container{
+.container {
     margin: 0 14rem;
 }
 
-footer{
+footer {
     font-size: 1rem;
 }
 
-.contributing ul{
+#author{
+    padding-left: 20px;
+}
+
+.contributing ul {
     margin: 1rem 0 1rem 3rem;
 }
 
-.author ul{
+.author-section ul {
     margin: 0.5rem 0 3rem 3rem;
+}
+
+@media (min-width:481px) and (max-width:620px) {
+    body {
+        margin: 50px !important;
+    }
+    .container{
+        padding: 0 20px !important;
+    }
+
+    .code {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:480px) {
+    body{
+        margin: 10px !important;
+    }
+    .container{
+        padding: 0 30px !important;
+    }
+    .repolink p, #base-url{
+        font-size: 13px;
+    }
 }
