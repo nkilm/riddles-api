@@ -4,103 +4,181 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.1s ease-in-out;
 }
 
-a {
-    text-decoration: none;
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 62.5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main>* {
-    margin-bottom: 1rem;
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.gradient__text {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient__bg {
+    background-attachment: fixed;
+    
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-text {
+    font-weight: 400;
+    /* line-height: 2.5rem; */
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+header {
+    margin-top: 2.5rem;
 }
 
 #title {
-    font-size: 2.5rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 5rem;
     text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0.8rem;
 }
 
-.repolink p {
-    font-size: 1.1rem;
-    display: block;
-    text-align: center;
-    margin-bottom: 0.8rem;
+.repolink {
+    font-size: 1.6rem;
+}
+
+.repolink span {
+    color: #0e5ed4;
+}
+
+.repolink a:hover {
+    font-size: 1.7rem;
+    color: #0e5ed4;
+}
+
+.container {
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 .badges {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-.badges a {
-    margin-right: 1rem;
+.badges img {
+    margin: 0 1rem;
 }
 
-#api 
-{
-    padding-left: 20px;
-}
-#base-url {
-    font-family: 'Roboto Mono', monospace;
+.api-example {
+    margin: 2rem 0;
 }
 
-.code {
-    background-color: #f5f5f5;
-    border-radius: 1rem;
+.api-example p:first-of-type {
+    padding-top: 1rem;
+    color: #2e8b57;
+    margin-bottom: 0.5rem;
 }
 
-main {
-    font-size: 1rem;
+#base-url a:hover {
+    font-size: 1.6rem;
+    color: #0e5ed4;
 }
 
-.container {
-    margin: 0 14rem;
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
 }
 
-footer {
-    font-size: 1rem;
+.contributing {
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 3rem;
 }
 
-#author{
-    padding-left: 20px;
+.contributing h2 {
+    margin-bottom: 1rem;
 }
 
-.contributing ul {
-    margin: 1rem 0 1rem 3rem;
+.contributing p {
+    margin-top: 0.2rem;
 }
 
-.author-section ul {
-    margin: 0.5rem 0 3rem 3rem;
+.author {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
 }
 
-@media (min-width:481px) and (max-width:620px) {
-    body {
-        margin: 50px !important;
+.author a:hover {
+    color: #0e5ed4;
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid #000;
+}
+
+
+@media screen and (max-width:750px){
+    html{
+        font-size: 10px;
     }
     .container{
-        padding: 0 20px !important;
-    }
-
-    .code {
-        font-size: 14px;
+        margin: 2rem 8rem 0 8rem;
     }
 }
 
-@media (max-width:480px) {
-    body{
-        margin: 10px !important;
+@media screen and (max-width: 550px) {
+    html{
+        font-size: 9px;
     }
+    .container {
+        margin: 1rem 5rem 0 5rem;
+    }
+}
+
+@media screen and (max-width:410px){
+    html{
+        font-size: 8px;
+    }
+    .repolink{
+        margin: 0 2rem;
+    }
+    .badges{
+        flex-wrap: wrap;
+    }
+
+    .badges > *{
+        padding-top: 1rem;
+    }
+
+    
     .container{
-        padding: 0 30px !important;
-    }
-    .repolink p, #base-url{
-        font-size: 13px;
+        margin: 1rem 3rem 0 3rem;
     }
 }
