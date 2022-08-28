@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.1s ease-in-out;
 }
 
 html {
@@ -50,6 +49,10 @@ a {
     /* line-height: 2.5rem; */
     letter-spacing: 0.5px;
     word-spacing: 1px;
+}
+
+a:hover{
+    transition: all 0.2s ease-in-out;
 }
 
 header {
