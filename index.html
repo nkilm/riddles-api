@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddles API</title>
-    <link rel="icon" href="/assets/puzzle.png">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="public/assets/puzzle.png">
+    <link rel="stylesheet" href="public/css/style.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
@@ -35,12 +35,9 @@
             <p>Returns a random riddle(Object).</p>
             <div class="code">
                 <pre class="pre">
-                  <code>
-    {
-        "riddle": "What do you serve that you can't eat?",
-        "answer": "A tennis ball"
-    }
-                  </code>
+                    <code>
+                        <p class="ranRiddle"></p>
+                    </code>
                 </pre>
             </div>
         </div>
@@ -58,7 +55,13 @@
             <p>Made with &#x2764;&#xFE0F by <a href="https://github.com/nkilm" target="_">Nikhil Mohite</a></p>
         </div>
     </footer>
-
+<script>
+    fetch('https://riddles-api.vercel.app/random')
+    .then((res)=>res.json())
+    .then((data)=>{
+        document.querySelector(".ranRiddle").innerHTML = "{\n  \"riddle\": \""+data.riddle+"\,"+ "\n\n  \"answer\": \""+data.answer+"\"\n\n}"
+    })
+</script>
 </body>
 
 </html>
