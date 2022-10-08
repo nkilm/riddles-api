@@ -114,8 +114,11 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
     text-align: justify;
+    width: 50rem;
 }
-
+.ranRiddle{
+    color: #000 !important;
+}
 .contributing {
     font-size: 1.4rem;
 
